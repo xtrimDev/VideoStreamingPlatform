@@ -24,6 +24,10 @@ header {
     background: #000000;
     color: white;
     padding: 0 20px;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
 }
 
 header .container {
@@ -71,6 +75,7 @@ header nav ul li a:hover {
 }
 
 .search-bar i {
+    display: none;
     cursor: pointer;
     z-index: -1;
     position: relative;
@@ -133,6 +138,7 @@ header .search-bar button:hover {
 .user-info {
     display: flex;
     align-items: center;
+    color: black;
 }
 
 .user-info h3 {
@@ -153,7 +159,8 @@ header .search-bar button:hover {
 }
 
 #subMenu {
-    display: none
+    display: none;
+    z-index: 10000;
 }
 
 .submenu-link {
@@ -584,10 +591,14 @@ ul {
 
 @media (max-width: 840px) {
     .search-bar input {
+        width: 250px;
         position: absolute;
-        top: 65px;
-        left: 46%;
-        top: 8.5%;
+        top: 53%;
+        left: 34%;
+        transform: translate(-50%, -50%);
+        padding: 10px 14px;
+        font-size: 16px;
+        border-radius: 20px;
         display: none;
     }
 
@@ -596,6 +607,7 @@ ul {
     }
 
     .search-bar i {
+        display: block;
         z-index: 1;
     }
 
