@@ -111,20 +111,17 @@ header .search-bar button:hover {
     position: fixed;
     top: 60px;
     right: 0;
-    margin-right: 10%;
+    margin-right: 20px;
 }
 
 .sub-menu-wrap {
+    z-index: 5;
     width: 320px;
     max-height: 400px;
     overflow: hidden;
-    display: none;
     transition: max-height 0.5s;
 }
 
-.sub-menu-wrap.open-menu {
-    max-height: 400px;
-}
 
 .sub-menu {
     border-radius: 12px;
@@ -153,6 +150,10 @@ header .search-bar button:hover {
     width: 100%;
     background: #ccc;
     margin: 15px 0 10px;
+}
+
+#subMenu {
+    display: none
 }
 
 .submenu-link {
