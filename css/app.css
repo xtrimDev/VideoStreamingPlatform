@@ -409,6 +409,10 @@ header .search-bar button:hover {
 
 .Movies .center .card .content p {
     cursor: pointer;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 #tv-shows {
