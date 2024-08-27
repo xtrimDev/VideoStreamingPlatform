@@ -373,12 +373,26 @@ header .search-bar button:hover {
     background-color: #212121;
     border-radius: 0.5rem;
     height: 50%;
+    overflow: hidden;
+}
+
+.Movies .center .card .cover {
+    max-height: 200px;
+    overflow: hidden;
 }
 
 .Movies .center .card img {
     width: 100%;
     height: 50%;
+    cursor: pointer;
+    /* max-height: 200px; */
     border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.Movies .center .card img:hover {
+    scale: 1.2;
+    opacity: 0.8;
 }
 
 .Movies .center .card .content {
@@ -387,6 +401,14 @@ header .search-bar button:hover {
     gap: 1rem;
     font-size: 0.8rem;
     padding: 0.5rem;
+}
+
+.Movies .center .card .content h2 {
+    cursor: pointer;
+}
+
+.Movies .center .card .content p {
+    cursor: pointer;
 }
 
 #tv-shows {
